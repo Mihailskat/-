@@ -1,0 +1,16 @@
+import math
+print('Введите коэфиценты: ')
+a, b, c = int(input()), int(input()), int(input())
+
+D = b**2 - 4*a*c
+print(f'D = {a}^2-4*{a}*{c}={D}')
+if D > 0:
+  x1 = (-b + math.sqrt(D))/2*a
+  x2 = (-b - math.sqrt(D))/2*a
+  print(f'2 корня, x1 = {x1}',
+  f'x2 = {x2}')
+elif D == 0:
+  x = -b/2*a
+  print(f'1 корень, x = {x}')
+else:
+  print('Нет корней! ')
